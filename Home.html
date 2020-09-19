@@ -327,7 +327,7 @@ function LaptopsSlideShow() {
 </div>
 
 <script>
-var IndexOfSlide = 0;
+var IndexOfSlide2 = 0;
 MobileSlideShow();
 
 function MobileSlideShow() {
@@ -337,13 +337,13 @@ function MobileSlideShow() {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-  IndexOfSlide++;
-  if (IndexOfSlide > slides.length) {IndexOfSlide = 1}    
+  IndexOfSlide2++;
+  if (IndexOfSlide2 > slides.length) {IndexOfSlide2 = 1}    
   for (i = 0; i < dots2.length; i++) {
     dots2[i].className = dots2[i].className.replace("active", "");
   }
-  slides[IndexOfSlide-1].style.display = "block";  
-  dots2[IndexOfSlide-1].className += " active";
+  slides[IndexOfSlide2-1].style.display = "block";  
+  dots2[IndexOfSlide2-1].className += " active";
   setTimeout(MobileSlideShow, 2000); // Change image every 2 seconds
 }
 
